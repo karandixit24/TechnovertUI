@@ -1,0 +1,32 @@
+@import '../../Styles/Variables.scss';
+
+.star-rating {
+  
+
+    button {
+        
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        
+
+        .faStar-fa {
+            outline-offset: 4px;
+            height: 25px;
+            width: 25px;
+          }
+      
+         
+    }
+
+    .on {
+        color: #553bb9;
+        
+      }
+      .off {
+     color: white;
+    }
+
+    
+}

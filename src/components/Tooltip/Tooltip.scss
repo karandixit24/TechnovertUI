@@ -1,0 +1,83 @@
+@import '../../Styles/Variables.scss';
+
+.tooltip-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+   
+    .tooltip-triangle {
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 15px solid #505a6c;
+        margin-left: 20px;
+
+    }
+
+    .triangle-topstart {
+        margin-left: 20px;
+    }
+
+    .triangle-topend {
+        margin-right: 20px;
+    }
+
+    .triangle-bottomstart {
+        transform: rotate(180deg);
+        margin-left: 20px;
+    }
+
+    .triangle-bottomcenter {
+        transform: rotate(180deg);
+    }
+
+    .triangle-bottomend {
+        transform: rotate(180deg);
+        margin-right: 20px;
+    }
+
+    .tooltip-msg-container {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+       background-color: #505a6c;
+       color: white;
+       padding: 25px;
+       border-radius: 20px;
+       width: 223px;
+       font-weight: 500;
+       font-size: 16px;
+       font-family: Arial, Helvetica, sans-serif;
+       
+    }
+}
+
+.tooltip-topstart {
+    align-items: flex-start;
+}
+
+.tooltip-topcenter {
+    align-items: center;
+}
+
+.tooltip-topend {
+    align-items: flex-end;
+}
+
+.tooltip-bottomstart {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+.tooltip-bottomcenter {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.tooltip-bottomend {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+}

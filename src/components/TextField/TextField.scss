@@ -1,0 +1,72 @@
+@import '../../Styles/Variables.scss';
+
+.textfield-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .textfield-label {
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+    }
+    .textfield {
+     outline: none;
+     border-radius: 10px;
+     border: 2px solid $G75;
+     padding: 14px;
+     color: black;
+     font-weight: 600;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 15px;
+    }
+
+    textarea:focus {
+        outline:none;
+        border:none;
+        border: 2px solid $P500; 
+    }
+    
+    .primary {
+        border: 2px solid $G75;
+        background-color: white;
+    }
+    
+    .disabled {
+        border: 2px solid $G75;
+        background-color: $G50;
+    }
+    
+    .error {
+        border: 2px solid red;
+        background-color: #fff;
+       &:focus {
+            outline: none;
+            border: 2px solid red;
+        
+        }
+    }
+    
+    
+
+    .helper-text-primary {
+        color: $G200;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+    .helper-text-disabled {
+        color: $G200;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+    .helper-text-error {
+        color: red;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+}
