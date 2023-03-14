@@ -1,0 +1,36 @@
+@import '../../Styles/Variables.scss';
+
+.btn-container {
+    .button {
+        padding: 13px 18px;
+        text-transform: capitalize;
+        width: 100%;
+        border-radius: 3px;
+        font-size: medium;
+        font-weight: 600;
+        cursor: pointer;
+        
+        &.primary {
+            background-color: $P300;
+            color: #fff;
+            border: none;
+           
+        }
+    }
+    
+   
+    
+    .secondary {
+        color: $P300;
+        background-color: #fff;
+        border: $P300 2px solid;
+       
+    }
+    
+    .terciary {
+        color: $P300;
+        background-color: #fff;
+        border: none;
+    }
+}
+

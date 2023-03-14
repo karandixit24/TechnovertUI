@@ -1,0 +1,39 @@
+@import "../../Styles/Variables.scss";
+
+.range-slider-container {
+  width: 100%;
+
+  input[type="range"] {
+    color: #ef233c;
+    --thumb-height: 1.125em;
+    --track-height: 0.125em;
+    --track-color: rgba(0, 0, 0, 0.2);
+    --brightness-hover: 180%;
+    --brightness-down: 80%;
+    --clip-edges: 0.125em;
+  }
+
+  .range-slider:hover {
+    opacity: 1;
+  }
+
+  .range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    border: 8px solid white;
+    background: #553bb9;
+    cursor: pointer;
+  }
+
+  .range-slider::-moz-range-thumb {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    border: 8px solid white;
+    background: #553bb9;
+    cursor: pointer;
+  }
+}

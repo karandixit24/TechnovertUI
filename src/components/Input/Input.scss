@@ -1,0 +1,84 @@
+@import '../../Styles/Variables.scss';
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    .input-inner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+            margin-left: -30px;
+            cursor: pointer;
+        }
+
+        .input {
+            display: block;
+            width: 100%;
+            height: 2.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            border-radius: 0.25rem;
+            background-color: #fff;
+            border: 2px solid grey;
+            color: black;
+            font-weight: 600;
+        }
+
+        input:focus {
+            outline:none;
+            border:none;
+            border: 2px solid $P300; 
+        }
+        
+        .primary {
+            border: 2px solid $G75;
+            background-color: white;
+        }
+        
+        .disabled {
+            border: 2px solid $G75;
+            background-color: $G50;
+        }
+        
+        .error {
+            border: 2px solid red;
+            background-color: #fff;
+        }
+        
+        .error:focus {
+            outline: none;
+            border: 2px solid red;
+        
+        }
+    }
+
+   
+
+    
+    
+    .input-title {
+        font-weight: 600;
+    }
+
+    .helper-text-primary {
+        color: #808080;
+    }
+
+    .helper-text-disabled {
+        color: #808080;
+    }
+
+    .helper-text-error {
+        color: red;
+    }
+    
+    
+    
+}
+
+
+
